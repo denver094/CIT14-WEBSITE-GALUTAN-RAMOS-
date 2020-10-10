@@ -1,0 +1,168 @@
+body{
+	
+	padding:0;
+	margin:0;
+	
+	
+}
+/*global*/
+.container{
+	width:80%;
+	margin:auto;
+	overflow:hidden;	
+}
+
+ul{
+	margin:0;
+	padding:0;
+}
+.button_1{
+	height:38px;
+	background:red;
+	border:0;
+	padding-left:20px;
+	padding-right:20px;
+}
+/*header*/
+header{
+	background:black;
+	font:Courier New;
+	color:#ffffff;
+	padding-top:10px;
+	min-height:30px;
+	border-bottom:pink 5px solid;	
+}
+
+header a{
+
+	float: left;
+	display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+}
+
+header li{
+	float:left;
+	display:inline;
+	padding: 0 10px 0 10px;
+}
+
+header #branding{
+	float:left;
+}
+
+header #branding h1{
+	margin:0;
+	font-family:Coms Sans MS;
+}
+
+header nav{
+	float:right;
+	margin-top:10px;
+}
+header .current a{
+	color:#ff8000;
+	
+}
+header a:hover{
+	border-bottom: 3px solid orange;
+}
+header a.active{
+	border-bottom: 3px solid orange;
+}
+
+
+/*logitechtitle*/
+.logititle{
+	text-align:center;
+	color:black;
+	text-shadow:0 1px 0 #ccc, 0 2px 0 #bbb, 0 4px 0 yellow, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px yellow, 0 20px 20px rgba(0,0,0,.15);
+	font-size:30px;		
+	font-family:Arial, Helvetica,sans-serif;
+}
+
+
+
+/*container2*/
+.container2{
+	width:963px;
+	min-height:600px;
+	background:#fff;
+	margin:70px auto 0;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	
+	
+}
+.container2 .box{
+	position:relative;
+	width:300px;
+	height:300px;
+	background:#ff0;
+	margin:10px;
+	box-sizing:border-box;
+	display:inline-block;
+}
+.container2 .box .imgBox{
+	position:relative;
+	overflow:hidden;
+}
+.container2 .box .imgBox img{
+	max-width:100%;
+	height:300px;
+	transition:transform 2s;
+}
+.container2 .box:hover .imgBox img{
+	transform:scale(1.2);
+	
+}
+.container2 .box .details{
+	position:absolute;
+	top:10px;
+	left:10px;
+	right:10px;
+	bottom:10px;
+	background:rgba(0,0,0,.3);
+	transform:scaleY(0);
+	transition:transform .5s;
+	
+
+}
+
+.container2 .box:hover .details{
+	transform:scaleY(1);
+
+}
+.container2 .box .details .content{
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	text-align:center;
+	
+	padding:50px;
+	color:#fff;
+}
+.container2 .box .details .content h2{
+	margin:0;
+	padding:0;
+	font-size:30px;
+	color:#ff0;
+}
+.container2 .box .details .content p{
+	margin:10px;
+	padding:0;
+	
+	
+}
+.container2 .box .details .content a{
+	margin:10px;
+	color:white;
+}
+.container2 .box a:hover{
+ background-color:red;
+}
